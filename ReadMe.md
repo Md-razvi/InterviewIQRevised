@@ -14,4 +14,6 @@ The given project is a website created for developers to test their skills by ta
 - Chat Bot AI  b/w user and interviewer (where interviewer is a chat bot).
 - Time && Difficulty Selection of user for the interviewer.
 - Experience
-## APIs(Needs to Be created by me for now ) 
+## APIs(Needs to Be created by me for now)
+- Auth Configurations  is a firs task of this project 
+- I have created a folder file controller here  
