@@ -17,4 +17,14 @@ The given project is a website created for developers to test their skills by ta
 - Experience
 ## APIs(Needs to Be created by me for now)
 - Auth Configurations  is a firs task of this project 
-- I have created a folder file controller here  
+- I have created a folder file controller here
+## Auth configuration API
+1) http://localhost:8080/auth/register  
+2) http://localhost:8080/auth/login
+## Interview API
+1) http://localhost:8080/interview/create
+## Questions API  
+1) http://localhost:8080/interview/list
+## Answers API
+1) http://localhost:8080/answer 
+
