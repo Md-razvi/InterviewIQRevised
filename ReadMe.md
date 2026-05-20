@@ -5,8 +5,9 @@ The given project is a website created for developers to test their skills by ta
 ## TechStack
 - Java
 - Spring Boot
-- React (Basically my personal practice instead of HTML , CSS, Javascript)
+- HTML,CSS,Javascript
 - MySQL for the given Data Base
+- React (Basically my personal practice instead of HTML , CSS, Javascript i.e ,React will be at last once the backend is complete)
 
 ## Features
 - Login Page(SignIn Register).
