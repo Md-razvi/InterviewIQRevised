@@ -24,4 +24,10 @@ public class AnswerDtos {
         private String message;
         private Long answerId;
     }
+    @Data
+    @AllArgsConstructor
+    @NoArgsConstructor
+    public static class SubmitAnswerItem{
+
+    }
 }
