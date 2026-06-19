@@ -1,5 +1,4 @@
 package InterviewIQ.AI_project.dto;
-
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
@@ -12,7 +11,7 @@ public class EvaluationDtos {
     @AllArgsConstructor
     @NoArgsConstructor
     public static class EvaluationRequest{
-        private List<SubmittedAnswers> answers;
+        private List<AnswerDtos.SubmitAnswerItem> answers;
     }
     @Data
     @AllArgsConstructor
@@ -27,13 +26,6 @@ public class EvaluationDtos {
         private List<String> recommendations;
     }
 
-    @Data
-    @AllArgsConstructor
-    @NoArgsConstructor
-    public static class SubmittedAnswers{
-        private Long questionId;
-        private String questionText;
-        private String answerText;
-    }
+
 
 }

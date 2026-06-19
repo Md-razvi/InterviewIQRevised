@@ -9,6 +9,9 @@ import org.springframework.web.bind.annotation.*;
 
 import InterviewIQ.AI_project.dto.AnswerDtos.*;
 
+import java.util.ArrayList;
+import java.util.List;
+
 
 @RestController
 @RequestMapping("/answer")
@@ -19,9 +22,18 @@ public class AnswerController {
         this.answerService=answerService;
     }
     @PostMapping
-    public AnswerResponse getAnswers(@RequestBody AnswerRequest request){
-        Answer ans=answerService.Save(request.getQuestionId(),request.getAnswerText());
-        return new AnswerResponse(true,"Answer Saved",ans.getId());
+    public SubmitAnswerResponse getAnswers(@RequestBody SubmitAnswerRequest request){
+        List <Answer> givenAnswer=new ArrayList<>();
+        if(request.getAnswers()!=null){
+            for(SubmitAnswerItem item: request.getAnswers()) {
+                Answer a = new Answer();
+                a.setQuestionId(item.getQuestionId());
+                a.setAnswerText(item.getAnswerText());
+                givenAnswer.add(a);
+            }
+        }
+        List<Answer> saved=answerService.SaveAll(givenAnswer);
+        return new SubmitAnswerResponse(true,saved.size());
     }
 
 
